@@ -24,8 +24,6 @@ return {
 					null.builtins.formatting.clang_format,
 				},
 			})
-
-			vim.keymap.set("n", "<leader>ff", ":lua vim.lsp.buf.format()<CR>")
 		end,
 	},
 }

@@ -64,9 +64,6 @@ return {
 					width = 0.9,
 				},
 			})
-
-      vim.keymap.set("n", "<leader>tt", ":lua require('FTerm').toggle()<CR>")
-      vim.keymap.set("t", "<leader>tt", "<C-\\><C-n>:lua require('FTerm').toggle()<CR>")
 		end,
 	},
 }

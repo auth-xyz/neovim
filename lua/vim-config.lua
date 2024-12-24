@@ -1,22 +1,17 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-vim.o.background = "dark"
-vim.opt.clipboard = "unnamedplus"
-vim.opt.swapfile = false
-vim.wo.number = true
-vim.wo.relativenumber = true
+-- General Settings
+vim.g.mapleader = " "              -- Leader key: <Space>
+vim.g.maplocalleader = "\\"        -- Local leader key: \
+vim.o.background = "dark"          -- Background setting: dark mode
+vim.opt.clipboard = "unnamedplus"  -- Use system clipboard
 
-vim.keymap.set("n", "<c-k>", ":wincmd k<CR>")
-vim.keymap.set("n", "<c-j>", ":wincmd j<CR>")
-vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
-vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
+-- Window Options
+vim.wo.number = true               -- Show line numbers
+vim.wo.relativenumber = true       -- Show relative line numbers
 
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-
-vim.keymap.set("n", "<tab>", ":bnext<CR>")
-vim.keymap.set("n", "<leader>x", ":bp<bar>sp<bar>bn<bar>bd<CR>")
+-- Indentation Settings
+vim.cmd("set expandtab")           -- Use spaces instead of tabs
+vim.cmd("set tabstop=2")           -- Tab width: 2 spaces
+vim.cmd("set softtabstop=2")       -- Soft tab width: 2 spaces
+vim.cmd("set shiftwidth=2")        -- Indent width: 2 spaces
 
 
