@@ -31,3 +31,7 @@ vim.keymap.set("n", "K", vim.lsp.buf.hover, {})                           -- K: 
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})                     -- gd: Go to definition
 vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})   -- <Leader>ca: Code actions (normal/visual mode)
 vim.keymap.set("n", "<leader>m", vim.lsp.buf.rename, {})                  -- <Leader>m: Rename symbol
+
+-- Visual mode indent using > and <
+vim.keymap.set("v", "<", "<gv", {}) -- <: Decrease indentation
+vim.keymap.set("v", ">", ">gv", {}) -- >: Increase indentation
