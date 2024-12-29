@@ -1,14 +1,5 @@
 return {
 	{
-		"ellisonleao/gruvbox.nvim",
-		priority = 1000,
-		opts = ...,
-		config = function()
-			vim.cmd([[colorscheme gruvbox]])
-		end,
-	},
-
-	{
 		"terrortylor/nvim-comment",
 		config = function()
 			require("nvim_comment").setup()
