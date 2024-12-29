@@ -1,6 +1,6 @@
 return {
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
-
+  { "petertriho/nvim-scrollbar", opts = {} },
   {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.8",
@@ -42,8 +42,6 @@ return {
           },
         },
       })
-
-      vim.keymap.set("n", "<leader>e", ":Neotree<CR>")
     end,
   },
 

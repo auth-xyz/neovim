@@ -24,10 +24,11 @@ vim.keymap.set("n", "<leader>tt", ":lua require('FTerm').toggle()<CR>")         
 vim.keymap.set("t", "<leader>tt", "<C-\\><C-n>:lua require('FTerm').toggle()<CR>") -- <Leader>tt: Toggle FTerm (Terminal mode)
 
 -- Neo-tree toggle
-vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>")
+vim.keymap.set("n", "<leader>e", ":Neotree<CR>")
 
 -- Comment Toggle
-vim.keymap.set("n", "<leader>/", ":CommentToggle<CR>") -- <Leader>/: Toggle comment
+vim.keymap.set({ "n", "v" }, "<leader>/", ":CommentToggle<CR>") -- <Leader>/: Toggle comment
+
 
 -- LSP Keybindings
 vim.keymap.set("n", "<leader>ff", ":lua vim.lsp.buf.format()<CR>")        -- <Leader>ff: Format the current buffer
@@ -38,3 +39,7 @@ vim.keymap.set("n", "<leader>m", vim.lsp.buf.rename, {})                  -- <Le
 
 -- Themery keybinds, set default to gruvbox-material
 vim.keymap.set("n", "<leader>th", ":Themery<CR>")
+
+-- Spectacle keybinds 
+vim.api.nvim_set_keymap("n", "<leader>ts", "<cmd>:lua require('spectacle').SpectacleTelescope()<CR>",{})
+vim.api.nvim_set_keymap("n", "<leader>ss", "<cmd>:lua require('spectacle').SpectacleSave()<CR>", {})

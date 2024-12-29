@@ -1,6 +1,9 @@
 return {
-	{ "lewis6991/gitsigns.nvim" },
-	{ "sindrets/diffview.nvim"  },
+	{
+		"RRethy/vim-illuminate",
+		"sindrets/diffview.nvim",
+		"lewis6991/gitsigns.nvim",
+	},
 
 	{
 		"kdheepak/lazygit.nvim",

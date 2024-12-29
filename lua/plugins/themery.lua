@@ -7,7 +7,6 @@ return {
 	{
 		"rebelot/kanagawa.nvim",
 		"sainnhe/gruvbox-material",
-		"mellow-theme/mellow.nvim",
 	},
 	{
 		"zaldih/themery.nvim",
@@ -19,8 +18,11 @@ return {
 				themes = {
 					{ name = "Gruvbox Dark", colorscheme = "gruvbox" },
 					{ name = "Gruvbox Material", colorscheme = "gruvbox-material" },
+
 					{ name = "Kanagawa", colorscheme = "kanagawa" },
-					{ name = "Mellow", colorscheme = "mellow" },
+          { name = "Kanagawa Wave", colorscheme = "kanagawa-wave" },
+          { name = "Kanagawa Dragon", colorscheme = "kanagawa-dragon" },
+
 				},
 			})
 		end,
