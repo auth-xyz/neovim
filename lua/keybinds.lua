@@ -13,6 +13,9 @@ vim.keymap.set("v", ">", ">gv", {}) -- >: Increase indentation
 vim.keymap.set("n", "<tab>", ":bnext<CR>")                       -- <Tab>: Switch to the next buffer
 vim.keymap.set("n", "<leader>x", ":bp<bar>sp<bar>bn<bar>bd<CR>") -- <Leader>x: Close the current buffer
 
+-- Toggle highlight search
+vim.keymap.set("n", "<leader>h", ":set hlsearch!<CR>")
+
 -- Plugin Keybindings
 -- Codeium
 vim.keymap.set("i", "<C-g>", function()

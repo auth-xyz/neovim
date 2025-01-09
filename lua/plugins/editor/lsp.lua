@@ -1,4 +1,8 @@
 return {
+  {
+    "hinell/lsp-timeout.nvim",
+    dependencies={ "neovim/nvim-lspconfig" }
+  },
 	{
 		"williamboman/mason.nvim",
 		config = function()
@@ -21,6 +25,7 @@ return {
 			-- Actual LSPs
 			require("lspconfig").lua_ls.setup({ capabilities = caps })
 			require("lspconfig").clangd.setup({ capabilities = caps })
+      require("lspconfig").gopls.setup({ capabilities = caps })
 			-- ===========
 
 		end,
