@@ -10,7 +10,6 @@ vim.keymap.set("v", "<", "<gv", {}) -- <: Decrease indentation
 vim.keymap.set("v", ">", ">gv", {}) -- >: Increase indentation
 
 -- Buffer Navigation
-vim.keymap.set("n", "<tab>", ":bnext<CR>") -- <Tab>: Switch to the next buffer
 vim.keymap.set("n", "<leader>x", ":bp<bar>sp<bar>bn<bar>bd<CR>") -- <Leader>x: Close the current buffer
 
 -- Toggle highlight search
@@ -18,11 +17,6 @@ vim.keymap.set("n", "<leader>h", ":set hlsearch!<CR>")
 vim.api.nvim_set_keymap("n", "<leader>E", ":lua vim.diagnostic.setqflist()<CR>", { noremap = true, silent = true })
 
 -- Plugin Keybindings
--- Codeium
-vim.keymap.set("i", "<C-g>", function()
-	return vim.fn["codeium#Accept"]()
-end, { expr = true, silent = true }) -- <Ctrl-g>: Accept Codeium suggestion
-
 -- FTerm
 vim.keymap.set("n", "<leader>tt", ":lua require('FTerm').toggle()<CR>") -- <Leader>tt: Toggle FTerm (Normal mode)
 vim.keymap.set("t", "<leader>tt", "<C-\\><C-n>:lua require('FTerm').toggle()<CR>") -- <Leader>tt: Toggle FTerm (Terminal mode)
