@@ -1,6 +1,6 @@
 return {
   {
-    'ap/vim-css-color'
+    "ap/vim-css-color",
   },
   {
     "nvim-telescope/telescope.nvim",
@@ -23,6 +23,32 @@ return {
 
       require("telescope").load_extension("ui-select")
     end,
+  },
+
+  {
+    "terrortylor/nvim-comment",
+    config = function()
+      require("nvim_comment").setup()
+    end,
+  },
+
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    opts = {},
+  },
+
+  {
+    "nvim-lualine/lualine.nvim",
+    config = function()
+      require("lualine").setup({
+        options = { theme = "gruvbox-material" },
+      })
+    end,
+  },
+
+  {
+    "m4xshen/autoclose.nvim"
   },
 
   {
