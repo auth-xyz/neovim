@@ -1,9 +1,9 @@
 USER = os.getenv("USER")
 local curr_group = vim.fn.system("id -ng 2> /dev/null | tr -d '\n'")
 
-SWAPDIR = "/home/" .. curr_group .. "/" .. USER .. "/nvim/swap//"
-BACKUPDIR = "/home/" .. curr_group .. "/" .. USER .. "/nvim/backup//"
-UNDODIR = "/home/" .. curr_group .. "/" .. USER .. "/nvim/undo//"
+SWAPDIR = "/home/" .. curr_group .. "/" .. ".config/" .. "/nvim/swap//"
+BACKUPDIR = "/home/" .. curr_group .. "/" .. ".config/" .. "/nvim/backup//"
+UNDODIR = "/home/" .. curr_group .. "/" .. ".config/" .. "/nvim/undo//"
 
 if vim.fn.isdirectory(SWAPDIR) == 0 then
 	vim.fn.mkdir(SWAPDIR, "p", "0o700")
